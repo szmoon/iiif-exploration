@@ -23,3 +23,7 @@
 
 - info.json: https://szmoon.github.io/iiif-2/A01-N01/info.json
 - OpenSeaDragon: http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://szmoon.github.io/iiif-2/A01-N01/info.json
+
+## Manifest in Universal Viewer
+
+http://universalviewer.io/uv.html?manifest=https://szmoon.github.io/manifest2.json#?c=0&m=0&s=0&cv=0&xywh=-297%2C-171%2C5924%2C3260
