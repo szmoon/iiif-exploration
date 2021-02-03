@@ -113,5 +113,8 @@
       ]
     }
   ],
-  "structures": []
+  "structures": [],
+  "thumbnail": {
+    "@id": "http://ff9a9afc-0478-4955-ac38-dd59246fcfcc"
+  }
 }
