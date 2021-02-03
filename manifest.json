@@ -29,6 +29,11 @@
           "label": "Full",
           "height": "2919",
           "width": "5332",
+          "thumbnail": {
+            "@id": "https://szmoon.github.io/iiif-2/B01-N01/full/1777%2C/0/default.jpg",
+            "width": 1777,
+            "height": 973
+          },
           "images": [
             {
               "@context": "http://iiif.io/api/presentation/2/context.json",
