@@ -19,7 +19,7 @@ B01-N01 (generated 3 sizes):
 - info.json: https://szmoon.github.io/iiif-2/B01-N01/info.json
 - OpenSeaDragon: http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://szmoon.github.io/iiif-2/B01-N01/info.json
 
-A01-N01 (generated 2 sizes):
+A01-N01 (generated 3 sizes):
 
 - info.json: https://szmoon.github.io/iiif-2/A01-N01/info.json
 - OpenSeaDragon: http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://szmoon.github.io/iiif-2/A01-N01/info.json
