@@ -1,0 +1,29 @@
+{
+  "tiles": [
+    {
+      "scaleFactors": [1, 2],
+      "width": 1024,
+      "height": 1024
+    }
+  ],
+  "protocol": "http://iiif.io/api/image",
+  "sizes": [
+    {
+      "width": 1610,
+      "height": 1128
+    },
+    {
+      "width": 2415,
+      "height": 1692
+    },
+    {
+      "width": 4830,
+      "height": 3384
+    }
+  ],
+  "profile": "http://iiif.io/api/image/2/level0.json",
+  "width": 4830,
+  "@id": "https://szmoon.github.io/iiif-2/B01-N03",
+  "@context": "http://iiif.io/api/image/2/context.json",
+  "height": 3384
+}
