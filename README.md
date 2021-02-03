@@ -1,13 +1,17 @@
 # szmoon.github.io
 
-### These were generated with `java -jar iiif-tiler.jar` an no parameters:
+### Generated with `java -jar iiif-tiler.jar` an no parameters:
 
-- https://szmoon.github.io/iiif-1/B01-N01/info.json
-- https://szmoon.github.io/iiif-1/A01-N01/info.json
+A01-N01:
 
-### These were generated with `java -jar iiif-tiler.jar B01-N01.jpg 6`:
+- info.json: https://szmoon.github.io/iiif-1/A01-N01/info.json
+- OpenSeaDragon: http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://szmoon.github.io/iiif-1/A01-N01/info.json
 
-(Using both `4` and `6` for the levels generated 3 sizes of each image)
+### Generated with `java -jar iiif-tiler.jar B01-N01.jpg 6`:
 
-- https://szmoon.github.io/iiif-2/B01-N01/info.json
-- https://szmoon.github.io/iiif-2/A01-N01/info.json
+(Using both `4` and `6` for the levels generated 3 sizes)
+
+A01-N01:
+
+- info.json: https://szmoon.github.io/iiif-2/A01-N01/info.json
+- OpenSeaDragon: http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://szmoon.github.io/iiif-2/A01-N01/info.json
