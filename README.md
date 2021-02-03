@@ -1,4 +1,4 @@
-# szmoon.github.io
+## Tiler tests
 
 ### Generated with `java -jar iiif-tiler.jar` an no parameters:
 
