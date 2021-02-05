@@ -29,9 +29,38 @@
       ],
       "canvases": [
         {
-          "@id": "http://226d4f11-28c5-4bb4-a0b1-a14ae7a5e9ed",
+          "@id": "http://efc067fd-3ef5-478c-a064-fa12e0f726a0",
           "@type": "sc:Canvas",
           "label": "Page 1",
+          "height": 1435,
+          "width": 2293,
+          "images": [
+            {
+              "@context": "http://iiif.io/api/presentation/2/context.json",
+              "@id": "http://7dc8ecc4-5323-4a5a-adef-ecdea525b465",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://iiif.archivelab.org/iiif/s01-n03/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://iiif.archivelab.org/iiif/s01-n03",
+                  "profile": ["http://iiif.io/api/image/2/level2.json"]
+                },
+                "height": 1435,
+                "width": 2293
+              },
+              "on": "http://efc067fd-3ef5-478c-a064-fa12e0f726a0"
+            }
+          ],
+          "related": ""
+        },
+        {
+          "@id": "http://226d4f11-28c5-4bb4-a0b1-a14ae7a5e9ed",
+          "@type": "sc:Canvas",
+          "label": "Page 2",
           "height": 1131,
           "width": 1565,
           "images": [
@@ -67,7 +96,7 @@
         {
           "@id": "http://1b095d76-54d5-425f-9cf3-9803d759a1f4",
           "@type": "sc:Canvas",
-          "label": "Page 2",
+          "label": "Page 3",
           "height": 1131,
           "width": 1145,
           "images": [
@@ -89,35 +118,6 @@
                 "width": 1145
               },
               "on": "http://1b095d76-54d5-425f-9cf3-9803d759a1f4"
-            }
-          ],
-          "related": ""
-        },
-        {
-          "@id": "http://efc067fd-3ef5-478c-a064-fa12e0f726a0",
-          "@type": "sc:Canvas",
-          "label": "Page 3",
-          "height": 1435,
-          "width": 2293,
-          "images": [
-            {
-              "@context": "http://iiif.io/api/presentation/2/context.json",
-              "@id": "http://7dc8ecc4-5323-4a5a-adef-ecdea525b465",
-              "@type": "oa:Annotation",
-              "motivation": "sc:painting",
-              "resource": {
-                "@id": "https://iiif.archivelab.org/iiif/s01-n03/full/full/0/default.jpg",
-                "@type": "dctypes:Image",
-                "format": "image/jpeg",
-                "service": {
-                  "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "https://iiif.archivelab.org/iiif/s01-n03",
-                  "profile": ["http://iiif.io/api/image/2/level2.json"]
-                },
-                "height": 1435,
-                "width": 2293
-              },
-              "on": "http://efc067fd-3ef5-478c-a064-fa12e0f726a0"
             }
           ],
           "related": ""
