@@ -11,9 +11,9 @@ B01-N02: https://szmoon.github.io/using-internet-archive/B01/N02-annotations.jso
 
 ### manifest
 
-https://szmoon.github.io/using-internet-archive/B01/manifest.json
-
-Universal Viewer: http://universalviewer.io/uv.html?manifest=https://szmoon.github.io/using-internet-archive/B01/manifest.json
+- https://szmoon.github.io/using-internet-archive/B01/manifest.json
+- Mirador: http://sas.gdmrdigital.com/?iiif-content=https://szmoon.github.io/using-internet-archive/B01/manifest.json
+  -Universal Viewer: http://universalviewer.io/uv.html?manifest=https://szmoon.github.io/using-internet-archive/B01/manifest.json
 
 ## S01
 
@@ -26,7 +26,8 @@ S01-N04: https://iiif.archivelab.org/iiif/s01-n04/info.json
 
 ### manifest
 
-https://szmoon.github.io/using-internet-archive/S01/manifest.json
-Universal Viewer: http://universalviewer.io/uv.html?manifest=https://szmoon.github.io/using-internet-archive/S01/manifest.json
+- https://szmoon.github.io/using-internet-archive/S01/manifest.json
+- Mirador: http://sas.gdmrdigital.com/?iiif-content=https://szmoon.github.io/using-internet-archive/S01/manifest.json
+- Universal Viewer: http://universalviewer.io/uv.html?manifest=https://szmoon.github.io/using-internet-archive/S01/manifest.json
 
 張天威
