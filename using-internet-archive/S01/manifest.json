@@ -29,103 +29,9 @@
       ],
       "canvases": [
         {
-          "@id": "http://226d4f11-28c5-4bb4-a0b1-a14ae7a5e9ed",
-          "@type": "sc:Canvas",
-          "label": "Page 1",
-          "height": 1131,
-          "width": 1565,
-          "images": [
-            {
-              "@context": "http://iiif.io/api/presentation/2/context.json",
-              "@id": "http://c2c34a0e-81d7-4638-9134-b3d580ec15c8",
-              "@type": "oa:Annotation",
-              "motivation": "sc:painting",
-              "resource": {
-                "@id": "https://iiif.archivelab.org/iiif/s01-n01/full/full/0/default.jpg",
-                "@type": "dctypes:Image",
-                "format": "image/jpeg",
-                "service": {
-                  "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "https://iiif.archivelab.org/iiif/s01-n01",
-                  "profile": ["http://iiif.io/api/image/2/level2.json"]
-                },
-                "height": 1131,
-                "width": 1565
-              },
-              "on": "http://226d4f11-28c5-4bb4-a0b1-a14ae7a5e9ed"
-            }
-          ],
-          "otherContent": [
-            {
-              "@id": "https://szmoon.github.io/using-internet-archive/S01/N01-annotations.json",
-              "@type": "sc:AnnotationList",
-              "label": "Calligraphy and Signature information"
-            }
-          ],
-          "related": ""
-        },
-        {
-          "@id": "http://1b095d76-54d5-425f-9cf3-9803d759a1f4",
-          "@type": "sc:Canvas",
-          "label": "Page 2",
-          "height": 1131,
-          "width": 1145,
-          "images": [
-            {
-              "@context": "http://iiif.io/api/presentation/2/context.json",
-              "@id": "http://42d523ad-12c1-4b6e-9c3d-c58231636b8e",
-              "@type": "oa:Annotation",
-              "motivation": "sc:painting",
-              "resource": {
-                "@id": "https://iiif.archivelab.org/iiif/s01-n02/full/full/0/default.jpg",
-                "@type": "dctypes:Image",
-                "format": "image/jpeg",
-                "service": {
-                  "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "https://iiif.archivelab.org/iiif/s01-n02",
-                  "profile": ["http://iiif.io/api/image/2/level2.json"]
-                },
-                "height": 1131,
-                "width": 1145
-              },
-              "on": "http://1b095d76-54d5-425f-9cf3-9803d759a1f4"
-            }
-          ],
-          "related": ""
-        },
-        {
-          "@id": "http://efc067fd-3ef5-478c-a064-fa12e0f726a0",
-          "@type": "sc:Canvas",
-          "label": "Page 3",
-          "height": 1435,
-          "width": 2293,
-          "images": [
-            {
-              "@context": "http://iiif.io/api/presentation/2/context.json",
-              "@id": "http://7dc8ecc4-5323-4a5a-adef-ecdea525b465",
-              "@type": "oa:Annotation",
-              "motivation": "sc:painting",
-              "resource": {
-                "@id": "https://iiif.archivelab.org/iiif/s01-n03/full/full/0/default.jpg",
-                "@type": "dctypes:Image",
-                "format": "image/jpeg",
-                "service": {
-                  "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "https://iiif.archivelab.org/iiif/s01-n03",
-                  "profile": ["http://iiif.io/api/image/2/level2.json"]
-                },
-                "height": 1435,
-                "width": 2293
-              },
-              "on": "http://efc067fd-3ef5-478c-a064-fa12e0f726a0"
-            }
-          ],
-          "related": ""
-        },
-        {
           "@id": "http://c76a916b-3810-43f9-b474-49229f16aeaf",
           "@type": "sc:Canvas",
-          "label": "Page 4",
+          "label": "Page 1",
           "height": 1653,
           "width": 1440,
           "images": [
@@ -159,6 +65,100 @@
           "related": ""
         }
       ]
+    },
+    {
+      "@id": "http://226d4f11-28c5-4bb4-a0b1-a14ae7a5e9ed",
+      "@type": "sc:Canvas",
+      "label": "Page 2",
+      "height": 1131,
+      "width": 1565,
+      "images": [
+        {
+          "@context": "http://iiif.io/api/presentation/2/context.json",
+          "@id": "http://c2c34a0e-81d7-4638-9134-b3d580ec15c8",
+          "@type": "oa:Annotation",
+          "motivation": "sc:painting",
+          "resource": {
+            "@id": "https://iiif.archivelab.org/iiif/s01-n01/full/full/0/default.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg",
+            "service": {
+              "@context": "http://iiif.io/api/image/2/context.json",
+              "@id": "https://iiif.archivelab.org/iiif/s01-n01",
+              "profile": ["http://iiif.io/api/image/2/level2.json"]
+            },
+            "height": 1131,
+            "width": 1565
+          },
+          "on": "http://226d4f11-28c5-4bb4-a0b1-a14ae7a5e9ed"
+        }
+      ],
+      "otherContent": [
+        {
+          "@id": "https://szmoon.github.io/using-internet-archive/S01/N01-annotations.json",
+          "@type": "sc:AnnotationList",
+          "label": "Calligraphy and Signature information"
+        }
+      ],
+      "related": ""
+    },
+    {
+      "@id": "http://1b095d76-54d5-425f-9cf3-9803d759a1f4",
+      "@type": "sc:Canvas",
+      "label": "Page 3",
+      "height": 1131,
+      "width": 1145,
+      "images": [
+        {
+          "@context": "http://iiif.io/api/presentation/2/context.json",
+          "@id": "http://42d523ad-12c1-4b6e-9c3d-c58231636b8e",
+          "@type": "oa:Annotation",
+          "motivation": "sc:painting",
+          "resource": {
+            "@id": "https://iiif.archivelab.org/iiif/s01-n02/full/full/0/default.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg",
+            "service": {
+              "@context": "http://iiif.io/api/image/2/context.json",
+              "@id": "https://iiif.archivelab.org/iiif/s01-n02",
+              "profile": ["http://iiif.io/api/image/2/level2.json"]
+            },
+            "height": 1131,
+            "width": 1145
+          },
+          "on": "http://1b095d76-54d5-425f-9cf3-9803d759a1f4"
+        }
+      ],
+      "related": ""
+    },
+    {
+      "@id": "http://efc067fd-3ef5-478c-a064-fa12e0f726a0",
+      "@type": "sc:Canvas",
+      "label": "Page 4",
+      "height": 1435,
+      "width": 2293,
+      "images": [
+        {
+          "@context": "http://iiif.io/api/presentation/2/context.json",
+          "@id": "http://7dc8ecc4-5323-4a5a-adef-ecdea525b465",
+          "@type": "oa:Annotation",
+          "motivation": "sc:painting",
+          "resource": {
+            "@id": "https://iiif.archivelab.org/iiif/s01-n03/full/full/0/default.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg",
+            "service": {
+              "@context": "http://iiif.io/api/image/2/context.json",
+              "@id": "https://iiif.archivelab.org/iiif/s01-n03",
+              "profile": ["http://iiif.io/api/image/2/level2.json"]
+            },
+            "height": 1435,
+            "width": 2293
+          },
+          "on": "http://efc067fd-3ef5-478c-a064-fa12e0f726a0"
+        }
+      ],
+      "related": ""
     }
   ],
   "structures": [],
