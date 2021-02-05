@@ -3,6 +3,11 @@
   "@id": "http://46a1b78f-e582-455e-b16f-84db5f764609",
   "@type": "sc:Manifest",
   "label": "Huan Junbi Sketchbook, gifted to Tien-Wei Chang",
+  "service": {
+    "profile": "http://iiif.io/api/search/0/search",
+    "@id": "http://sas.gdmrdigital.com/search-api/1a585278e8c1aeae235de374da17fcbe/search",
+    "@context": "http://iiif.io/api/search/0/context.json"
+  },
   "metadata": [],
   "description": [
     {
