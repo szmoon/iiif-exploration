@@ -5,6 +5,10 @@
 B01-N01: https://iiif.archivelab.org/iiif/b01-n01/info.json
 B01-N02: https://iiif.archivelab.org/iiif/b01-n02/info.json
 
+### annotations
+
+B01-N02: https://szmoon.github.io/using-internet-archive/B01/N02-annotations.json
+
 ### manifest
 
 https://szmoon.github.io/using-internet-archive/B01/manifest.json
