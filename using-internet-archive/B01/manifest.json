@@ -36,13 +36,15 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "https://iiif.archivelab.org/iiif/b01-n01/full/full/0/default.jpg",
+                "@id": "https://iiif.archivelab.org/iiif/b01-n01-2022/full/full/0/default.jpg",
                 "@type": "dctypes:Image",
                 "format": "image/jpeg",
                 "service": {
                   "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "https://iiif.archivelab.org/iiif/b01-n01",
-                  "profile": ["http://iiif.io/api/image/2/level2.json"]
+                  "@id": "https://iiif.archivelab.org/iiif/b01-n01-2022",
+                  "profile": [
+                    "http://iiif.io/api/image/2/level2.json"
+                  ]
                 },
                 "height": 2919,
                 "width": 5332
@@ -65,13 +67,15 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "https://iiif.archivelab.org/iiif/b01-n02/full/full/0/default.jpg",
+                "@id": "https://iiif.archivelab.org/iiif/b01-n02-2022/full/full/0/default.jpg",
                 "@type": "dctypes:Image",
                 "format": "image/jpeg",
                 "service": {
                   "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "https://iiif.archivelab.org/iiif/b01-n02",
-                  "profile": ["http://iiif.io/api/image/2/level2.json"]
+                  "@id": "https://iiif.archivelab.org/iiif/b01-n02-2022",
+                  "profile": [
+                    "http://iiif.io/api/image/2/level2.json"
+                  ]
                 },
                 "height": 1574,
                 "width": 2425

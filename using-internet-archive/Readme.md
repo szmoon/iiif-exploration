@@ -2,8 +2,9 @@
 
 ### image api
 
-B01-N01: https://iiif.archivelab.org/iiif/b01-n01/info.json
-B01-N02: https://iiif.archivelab.org/iiif/b01-n02/info.json
+B01-N01: https://iiif.archivelab.org/iiif/b01-n01-2022/info.json
+(old) https://iiif.archivelab.org/iiif/b01-n01/info.json
+B01-N02: https://iiif.archivelab.org/iiif/b01-n02-2022/info.json
 
 ### annotations
 
