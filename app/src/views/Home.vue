@@ -3,19 +3,18 @@
     <!-- <figure class="image is-full-width">
       <img src="" />
     </figure> -->
-    <Viewer />
+    <IiifViewer
+      manifestUrl="https://szmoon.github.io/using-internet-archive/B01/manifest.json"
+    />
   </div>
 </template>
 
 <script>
-import Viewer from '../components/Viewer';
+import IiifViewer from '../components/IiifViewer';
 export default {
   name: 'Home',
   components: {
-    Viewer
-  },
-  props: {
-    msg: String
+    IiifViewer
   }
 };
 </script>
