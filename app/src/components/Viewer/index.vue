@@ -1,11 +1,12 @@
 <template>
   <div>
-    <div style="width: 70%; height: 600px" id="viewer-image" ref="image" />
+    <div id="map"></div>
   </div>
 </template>
 <script>
-import OpenSeadragon from 'openseadragon';
-window.OpenSeadragon = OpenSeadragon;
+import 'leaflet-iiif';
+var L = window.L;
+
 export default {
   name: 'Viewer',
   data() {
@@ -17,110 +18,67 @@ export default {
     this.initViewer();
   },
   methods: {
-    // tileSourceFromManifest(manifest) {
-    //   const canvas = this.firstCanvas(manifest);
-    //   const firstImage = canvas.images[0];
-    //   const id = firstImage.resource.service['@id'];
-    //   return `${id}/info.json`;
-    // },
-    // firstCanvas(manifest) {
-    //   return manifest.sequences[0].canvases[0];
-    // },
     initViewer() {
       console.log('init Viewer');
-      // https://codesandbox.io/s/4ybif?file=/package.json:229-254
-      // https://observablehq.com/@bertspaan/iiif-openseadragon
-      // https://openseadragon.github.io/examples/tilesource-iiif/
-      // var duomo = {
-      //   Image: {
-      //     xmlns: 'http://schemas.microsoft.com/deepzoom/2008',
-      //     Url: '//openseadragon.github.io/example-images/duomo/duomo_files/',
-      //     Format: 'jpg',
-      //     Overlap: '2',
-      //     TileSize: '256',
-      //     Size: {
-      //       Width: '13920',
-      //       Height: '10200'
-      //     }
-      //   }
-      // };
 
-      // var source = [
-      //   {
-      //     type: 'image',
-      //     url: 'https://iiif.archivelab.org/iiif/b01-n01-2022/full/full/0/default.jpg'
-      //   },
-      // ];
-      // var source2 = {
-      //   Image: {
-      //     xmlns: 'http://schemas.microsoft.com/deepzoom/2008',
-      //     Url: '//openseadragon.github.io/example-images/duomo/duomo_files/',
-      //     Format: 'jpg',
-      //     Overlap: '1',
-      //     TileSize: '254',
-      //     Size: {
-      //       Width: '13920',
-      //       Height: '10200'
-      //     }
-      //   }
-      // };
-      /* this.viewer = OpenSeadragon({
-          id: "viewer-image",
-           showNavigator:  true,
-          animationTime: 0.4,
-          visibilityRatio: 0.2,
-          //prefixUrl: "//openseadragon.github.io/openseadragon/images/",
-             sequenceMode: true,
-                 debugMode:  true,
-          tileSources: source2
-        });*/
+      var map, stanfordMlk, apostle, princetonMap, bnf, iiifLayers;
 
-      // this.viewer = OpenSeadragon({
-      //   id: 'viewer-image',
-      //   animationTime: 0.4,
-      //   prefixUrl: '//openseadragon.github.io/openseadragon/images/',
-      //   showNavigator: true,
-      //   sequenceMode: true,
-      //   tileSources: this.tileSourceFromManifest(
-      //     'https://szmoon.github.io/using-internet-archive/B01/manifest.json'
-      //   )
-      // });
-      this.viewer = OpenSeadragon({
-        id: 'viewer-image',
-        // preserveViewport: true,
-        visibilityRatio: 1,
-        minZoomLevel: 1,
-        defaultZoomLevel: 1,
-        sequenceMode: true,
-        tileSources: [
-          {
-            '@context': 'http://iiif.io/api/image/2/context.json',
-            '@id':
-              'https://libimages1.princeton.edu/loris/pudl0001%2F4609321%2Fs42%2F00000001.jp2',
-            height: 7200,
-            width: 5233,
-            profile: ['http://iiif.io/api/image/2/level2.json'],
-            protocol: 'http://iiif.io/api/image',
-            tiles: [
-              {
-                scaleFactors: [1, 2, 4, 8, 16, 32],
-                width: 1024
-              }
-            ]
-          }
-        ]
+      map = L.map('map', {
+        center: [0, 0],
+        crs: L.CRS.Simple,
+        zoom: 0
       });
-      // this.viewer.initializeAnnotations();
-      /* OpenSeadragon({
-          animationTime: 0.4,
-          id: "viewer-image",
-          tileSources: {
-            type: "image",
-            url: "https://picsum.photos/id/237/200/300"
-          },
-          visibilityRatio: 0.2
-        });*/
+
+      stanfordMlk = L.tileLayer
+        .iiif(
+          'https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json',
+          {
+            attribution:
+              '<a href="http://searchworks.stanford.edu/view/hg676jb4964">Martin Luther King Jr. & Joan Baez march to integrate schools, Grenada, MS, 1966</a>'
+          }
+        )
+        .addTo(map);
+
+      princetonMap = L.tileLayer.iiif(
+        'http://libimages.princeton.edu/loris2/pudl0076%2Fmap_pownall%2F00000001.jp2/info.json',
+        {
+          attribution:
+            '<a href="http://arks.princeton.edu/ark:/88435/02870w62c">The provinces of New York and New Jersey, with part of Pensilvania, and the Province of Quebec : drawn by Major Holland, Surveyor General, of the Northern District in America. Corrected and improved, from the original materials, by Governr. Pownall, Member of Parliament, 1776</a>'
+        }
+      );
+
+      apostle = L.tileLayer.iiif(
+        'http://ids.lib.harvard.edu/ids/iiif/25286610/info.json',
+        {
+          attribution:
+            '<a href="http://via.lib.harvard.edu/via/deliver/deepcontentItem?recordId=olvwork576793%2CVIT.BB%3A4906794">Apostle: Anonymous sculptor of Florence, 15th century (1401-1500)</a>'
+        }
+      );
+
+      bnf = L.tileLayer.iiif(
+        'http://gallica.bnf.fr/iiif/ark:/12148/btv1b84539771/f1/info.json',
+        {
+          attribution:
+            '<a href="http://gallicalabs.bnf.fr/ark:/12148/btv1b84539771">ManuscritKalîla et Dimna, avec de nombreuses',
+          fitBounds: false
+        }
+      );
+
+      iiifLayers = {
+        'Martin Luther King Jr. & Joan Baez ...': stanfordMlk,
+        'The provinces of New York and N...': princetonMap,
+        'Apostle: Anonymous sculptor of Fl...': apostle,
+        'ManuscritKalîla et Dimna, avec de...': bnf
+      };
+
+      L.control.layers(iiifLayers).addTo(map);
     }
   }
 };
 </script>
+
+<style scoped>
+#map {
+  height: 500px;
+}
+</style>
