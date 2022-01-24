@@ -85,7 +85,7 @@
           ],
           "otherContent": [
             {
-              "@id": "https://szmoon.github.io/using-internet-archive/B01/N02-annotations.json",
+              "@id": "https://szmoon.github.io/iiif-exploration/using-internet-archive/B01/N02-annotations.json",
               "@type": "sc:AnnotationList",
               "label": "Calligraphy and Signature information"
             }

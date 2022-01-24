@@ -23,7 +23,7 @@
   ],
   "profile": "http://iiif.io/api/image/2/level0.json",
   "width": 4371,
-  "@id": "https://szmoon.github.io/iiif-2/B01-N02",
+  "@id": "https://szmoon.github.io/iiif-exploration/iiif-2/B01-N02",
   "@context": "http://iiif.io/api/image/2/context.json",
   "height": 2640
 }

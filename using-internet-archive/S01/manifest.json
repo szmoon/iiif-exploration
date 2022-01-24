@@ -86,7 +86,7 @@
           ],
           "otherContent": [
             {
-              "@id": "https://szmoon.github.io/using-internet-archive/S01/N01-annotations.json",
+              "@id": "https://szmoon.github.io/iiif-exploration/using-internet-archive/S01/N01-annotations.json",
               "@type": "sc:AnnotationList",
               "label": "Calligraphy and Signature information"
             }
@@ -151,7 +151,7 @@
           ],
           "otherContent": [
             {
-              "@id": "https://szmoon.github.io/using-internet-archive/S01/N04-annotations.json",
+              "@id": "https://szmoon.github.io/iiif-exploration/using-internet-archive/S01/N04-annotations.json",
               "@type": "sc:AnnotationList",
               "label": "Calligraphy and Signature information"
             }

@@ -4,7 +4,7 @@
       <img src="" />
     </figure> -->
     <IiifViewer
-      manifestUrl="https://szmoon.github.io/using-internet-archive/B01/manifest.json"
+      manifestUrl="https://szmoon.github.io/iiif-exploration/using-internet-archive/B01/manifest.json"
     />
   </div>
 </template>
