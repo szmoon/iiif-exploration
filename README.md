@@ -1,29 +1,33 @@
-## Tiler tests
+# iiif exploration
 
-### Generated with `java -jar iiif-tiler.jar` an no parameters:
+## B01
 
-`B01-N01` (generated 2 sizes):
+### image api
 
-- info.json: https://szmoon.github.io/iiif-1/B01-N01/info.json
-- OpenSeaDragon: http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://szmoon.github.io/iiif-1/B01-N01/info.json
+B01-N01: https://iiif.archivelab.org/iiif/b01-n01-2022/info.json
+B01-N02: https://iiif.archivelab.org/iiif/b01-n02-2022/info.json
 
-`A01-N01` (generated 3 sizes):
+### annotations
 
-- info.json: https://szmoon.github.io/iiif-1/A01-N01/info.json
-- OpenSeaDragon: http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://szmoon.github.io/iiif-1/A01-N01/info.json
+B01-N02: https://szmoon.github.io/using-internet-archive/B01/N02-annotations.json
 
-### Generated with `java -jar iiif-tiler.jar B01-N01.jpg 6`:
+### manifest
 
-`B01-N01` (generated 3 sizes):
+- https://szmoon.github.io/using-internet-archive/B01/manifest.json
+- Mirador: http://sas.gdmrdigital.com/?iiif-content=https://szmoon.github.io/using-internet-archive/B01/manifest.json
+- Universal Viewer: http://universalviewer.io/uv.html?manifest=https://szmoon.github.io/using-internet-archive/B01/manifest.json
 
-- info.json: https://szmoon.github.io/iiif-2/B01-N01/info.json
-- OpenSeaDragon: http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://szmoon.github.io/iiif-2/B01-N01/info.json
+## S01
 
-`A01-N01` (generated 3 sizes):
+### image api
 
-- info.json: https://szmoon.github.io/iiif-2/A01-N01/info.json
-- OpenSeaDragon: http://iiif.gdmrdigital.com/openseadragon/index.html?image=https://szmoon.github.io/iiif-2/A01-N01/info.json
+S01-N01: https://iiif.archivelab.org/iiif/s01-n01/info.json
+S01-N02: https://iiif.archivelab.org/iiif/s01-n02/info.json
+S01-N03: https://iiif.archivelab.org/iiif/s01-n03/info.json
+S01-N04: https://iiif.archivelab.org/iiif/s01-n04/info.json
 
-## Manifest in Universal Viewer
+### manifest
 
-http://universalviewer.io/uv.html?manifest=https://szmoon.github.io/manifest.json
+- https://szmoon.github.io/using-internet-archive/S01/manifest.json
+- Mirador: http://sas.gdmrdigital.com/?iiif-content=https://szmoon.github.io/using-internet-archive/S01/manifest.json
+- Universal Viewer: http://universalviewer.io/uv.html?manifest=https://szmoon.github.io/using-internet-archive/S01/manifest.json
