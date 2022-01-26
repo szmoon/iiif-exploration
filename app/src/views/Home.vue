@@ -1,11 +1,14 @@
 <template>
   <div>
-    <!-- <figure class="image is-full-width">
-      <img src="" />
-    </figure> -->
-    <IiifViewer
-      manifestUrl="https://szmoon.github.io/iiif-exploration/using-internet-archive/B01/manifest.json"
-    />
+    <div class="container has-text-left mb-5">
+      <p class="title is-3">An Intro to IIIF</p>
+      <p class="subtitle is-5">
+        Here you'll find basic information about IIIF, links to examples of
+        interesting use cases, as well as a few practical demos. This site was
+        created in January 2022 to accompany a presentation, and will not likely
+        be updated later.
+      </p>
+    </div>
   </div>
 </template>
 

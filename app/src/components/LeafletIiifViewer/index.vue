@@ -10,7 +10,7 @@ import $ from 'jquery';
 const L = window.L;
 
 export default {
-  name: 'IiifViewer',
+  name: 'LeafletIiifViewer',
   props: {
     manifestUrl: {
       type: String,

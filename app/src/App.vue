@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <Header />
-    <!-- <router-view /> -->
 
     <div class="page-content">
-      <router-view />
+      <div class="container is-max-desktop">
+        <router-view />
+      </div>
     </div>
   </div>
 </template>
@@ -32,7 +32,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  height: 100vh;
+  /* min-height: 100vh; */
+  height: 100%;
   background-color: $bgcolor-white;
   display: flex;
   flex-direction: column;

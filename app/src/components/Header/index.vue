@@ -1,16 +1,37 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <router-link to="/" class="navbar-item">
-        <h1 class="title">iiif demo</h1>
+      <router-link :to="basePath" class="navbar-item">
+        <h1 class="title">iiif exploration</h1>
       </router-link>
+    </div>
+
+    <div class="navbar-menu">
+      <!-- <div class="navbar-start">
+        <a class="navbar-item"> Home </a>
+      </div> -->
+      <div class="navbar-end">
+        <router-link :to="basePath" class="navbar-item">Main</router-link>
+        <router-link :to="basePath + 'static-tile-demo'" class="navbar-item"
+          >Static Tile Demo</router-link
+        >
+        <router-link :to="basePath + 'image-api-demo'" class="navbar-item"
+          >Image API Demo</router-link
+        >
+      </div>
     </div>
   </nav>
 </template>
 
 <script>
+import { basePath } from '../../router';
 export default {
-  name: 'Header'
+  name: 'Header',
+  data() {
+    return {
+      basePath: basePath
+    };
+  }
 };
 </script>
 
@@ -25,5 +46,38 @@ export default {
 .navbar {
   background-color: $bgcolor-white;
   border-bottom: 1px solid $bgcolor-purple;
+}
+
+.navbar-item {
+  display: flex;
+}
+
+.navbar-item,
+.navbar-link {
+  line-height: 2;
+}
+
+.navbar,
+.navbar-menu,
+.navbar-start,
+.navbar-end {
+  align-items: stretch;
+  display: flex;
+  padding: 0;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.navbar-menu {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.navbar-start {
+  justify-content: flex-start;
+  margin-right: auto;
+}
+.navbar-end {
+  justify-content: flex-end;
+  margin-left: auto;
 }
 </style>
