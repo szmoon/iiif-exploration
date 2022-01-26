@@ -13,12 +13,9 @@
 </template>
 
 <script>
-import IiifViewer from '../components/IiifViewer';
 export default {
   name: 'Home',
-  components: {
-    IiifViewer
-  }
+  components: {}
 };
 </script>
 
