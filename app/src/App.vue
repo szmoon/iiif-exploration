@@ -25,6 +25,9 @@ export default {
 
 <style lang="scss">
 @import '@/assets/main.scss';
+body {
+  min-height: 100%;
+}
 
 #app {
   font-family: 'Philosopher', sans-serif;
@@ -42,6 +45,27 @@ export default {
 
 .page-content {
   height: 100%;
-  padding: 30px;
+  padding: 50px;
+
+  h2 {
+    margin-top: 35px !important;
+    margin-bottom: 15px !important;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style-type: circle;
+  }
+
+  ol,
+  ul {
+    margin-bottom: 35px;
+    margin-left: 35px;
+    li {
+      margin-top: 15px;
+    }
+  }
 }
 </style>

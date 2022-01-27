@@ -6,18 +6,36 @@
         Uses pre-generated tiles and static web hosting
       </p>
     </div>
+    <!-- image viewer -->
     <LeafletIiifViewer
       manifestUrl="https://szmoon.github.io/iiif-exploration/static-tiles/B01-manifest.json"
     />
+    <!-- demo info -->
     <div class="container has-text-left mt-5">
       <h2 class="title is-5">About</h2>
       <p>
-        Also called a Level 0 implementation of the iiif Image API, this example
+        Also called a Level 0 implementation of the IIIF Image API, this example
         uses pre-generated image tiles, organized in a folder structure that
-        mimics the url structure of an actual iiif Image API. No image server,
-        cheaper to host images this way. Cons: doesn't support custom sizes and
-        cropping.
+        mimics the url structure of an actual IIIF Image API. "Level 0" refers
+        to the
+        <a
+          href="https://iiif.io/api/image/3.0/#6-compliance-level-and-profile-document"
+          >level</a
+        >
+        of compliance the json has with the IIIF Image API (minimum required).
       </p>
+      <h2 class="title is-5">Pros</h2>
+      <p>
+        No image server required (only file storage), so it's cheaper to host
+        images this way. Cons: doesn't support custom sizes and cropping.
+      </p>
+      <h2 class="title is-5">Cons</h2>
+      <p>
+        Doesn't support custom sizes, regions and cropping, which means that
+        images won't perform well in many popular viewers (thumbnails won't
+        populate). Annotations also won't compatible because of this.
+      </p>
+      <h2 class="title is-5">Tech Details</h2>
       <p>
         The images in this example were created using the
         <a href="https://github.com/glenrobson/iiif-tiler"
@@ -40,18 +58,6 @@
         >
         (rather than the info.json files directly).
       </p>
-      <h2 class="title is-5">Pros</h2>
-      <p>
-        No image server required (only file storage), so it's cheaper to host
-        images this way. Cons: doesn't support custom sizes and cropping.
-      </p>
-      <h2 class="title is-5">Cons</h2>
-      <p>
-        Doesn't support custom sizes, regions and cropping, which means that
-        images won't perform well in many popular viewers (thumbnails won't
-        populate). Annotations also won't compatible because of this.
-      </p>
-      <h2 class="title is-5">Data/Links</h2>
       <p>
         <b>Manifest: </b>
         <a
@@ -104,11 +110,4 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 @import '@/assets/main.scss';
-h2 {
-  margin-top: 35px !important;
-  margin-bottom: 15px !important;
-}
-p {
-  margin-bottom: 15px;
-}
 </style>

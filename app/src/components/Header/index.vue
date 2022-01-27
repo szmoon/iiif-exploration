@@ -12,12 +12,21 @@
       </div> -->
       <div class="navbar-end">
         <router-link :to="basePath" class="navbar-item">Main</router-link>
-        <router-link :to="basePath + 'static-tile-demo'" class="navbar-item"
-          >Static Tile Demo</router-link
+        <router-link :to="basePath + 'static-tile-demo'" class="navbar-item">
+          Static Tile Demo
+        </router-link>
+        <router-link :to="basePath + 'image-api-demo'" class="navbar-item">
+          Image API Demo
+        </router-link>
+        <router-link :to="basePath + 'iiif-uses'" class="navbar-item">
+          IIIF Uses
+        </router-link>
+        <a
+          href="https://github.com/szmoon/iiif-exploration"
+          class="navbar-item"
         >
-        <router-link :to="basePath + 'image-api-demo'" class="navbar-item"
-          >Image API Demo</router-link
-        >
+          Github
+        </a>
       </div>
     </div>
   </nav>
