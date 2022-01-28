@@ -24,6 +24,17 @@
           also a community that develops and implements APIS using IIIF
           standards.
         </p>
+        <p>Other definitions that may be helpful:</p>
+        <ul>
+          <li>
+            <b>API:</b> Application Programming Interface - "software
+            intermediary that allows two applications to talk to each other"
+          </li>
+          <li>
+            <b>JSON:</b> JavaScript Object Notation - "a simple and lightweight
+            text-based data format"
+          </li>
+        </ul>
       </div>
       <!-- iiif image -->
       <div class="container mt-6">
@@ -37,8 +48,19 @@
           >
         </p>
         <p>
+          The data powering the above image:
+          <a href="https://iiif.archivelab.org/iiif/b01-n01-2022/info.json">
+            https://iiif.archivelab.org/iiif/b01-n01-2022/info.json
+          </a>
+        </p>
+        <p>
           <a href="https://www.learniiif.org/image-api/playground">
             Guided IIIF playground
+          </a>
+        </p>
+        <p>
+          <a href="https://iiif.io/api/image/3.0/#4-image-requests">
+            Info on the different image requests
           </a>
         </p>
       </div>

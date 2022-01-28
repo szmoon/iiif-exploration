@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container has-text-left mb-5">
-      <h1 class="title is-3">Static Tile Demo</h1>
+      <h1 class="title is-3">Viewer using Level 0 Image API</h1>
       <p class="subtitle is-5">
         Uses pre-generated tiles and static web hosting
       </p>
@@ -15,9 +15,12 @@
       <h2 class="title is-5">About</h2>
       <p>
         Also called a Level 0 implementation of the IIIF Image API, this example
-        uses pre-generated image tiles, organized in a folder structure that
-        mimics the url structure of an actual IIIF Image API. "Level 0" refers
-        to the
+        uses
+        <a
+          href="https://github.com/szmoon/iiif-exploration/tree/main/static-tiles/B01-N01"
+          >pre-generated image tiles</a
+        >, organized in a folder structure that mimics the url structure of an
+        actual IIIF Image API. "Level 0" refers to the
         <a
           href="https://iiif.io/api/image/3.0/#6-compliance-level-and-profile-document"
           >level</a
@@ -51,35 +54,36 @@
         The viewer on this page is powered by
         <a href="https://leafletjs.com/">leaflet</a> and
         <a href="https://github.com/mejackreed/Leaflet-IIIF">leaflet-iiif</a>,
-        wrapped in a custom Vue component. It's displaying the images via the
+        wrapped in a custom Vue component.
+        <!-- It's displaying the images via the
         <a
           href="https://szmoon.github.io/iiif-exploration/static-tiles/B01-manifest.json"
           >manifest</a
         >
-        (rather than the info.json files directly).
+        (rather than the info.json files directly). -->
       </p>
-      <p>
+      <!-- <p>
         <b>Manifest: </b>
         <a
           href="https://szmoon.github.io/iiif-exploration/static-tiles/B01-manifest.json"
           >https://szmoon.github.io/iiif-exploration/static-tiles/B01-manifest.json</a
         >
-      </p>
+      </p> -->
       <p>
-        <b>info.json for 1st image: </b>
+        <b>info.json: </b>
         <a
           href="https://szmoon.github.io/iiif-exploration/static-tiles/B01-N01/info.json"
           >https://szmoon.github.io/iiif-exploration/static-tiles/B01-N01/info.json</a
         >
       </p>
       <p>
-        <b>full-size jpg for 1st image: </b>
+        <b>full-size jpg: </b>
         <a
           href="https://szmoon.github.io/iiif-exploration/static-tiles/B01-N01/full/full/0/default.jpg"
           >https://szmoon.github.io/iiif-exploration/static-tiles/B01-N01/full/full/0/default.jpg</a
         >
       </p>
-      <p>
+      <!-- <p>
         <b>info.json for 2nd image: </b>
         <a
           href="https://szmoon.github.io/iiif-exploration/static-tiles/B01-N02/info.json"
@@ -92,7 +96,7 @@
           href="https://szmoon.github.io/iiif-exploration/static-tiles/B01-N02/full/full/0/default.jpg"
           >https://szmoon.github.io/iiif-exploration/static-tiles/B01-N02/full/full/0/default.jpg</a
         >
-      </p>
+      </p> -->
     </div>
   </div>
 </template>

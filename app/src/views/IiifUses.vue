@@ -21,7 +21,7 @@
         <ul>
           <li>
             <b>Manifest from The National Library of Wales:</b>
-            https://blalbrit.github.io/2015/07/14/fellow-travelers-the-canterbury-tales-and-iiif
+            https://damsssl.llgc.org.uk/iiif/2.0/4628556/manifest.json
           </li>
           <li>
             <b>Manifest from Virtual Manuscript Library of Switzerland:</b>

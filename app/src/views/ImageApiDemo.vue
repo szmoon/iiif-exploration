@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container has-text-left mb-5">
-      <p class="title is-3">Image API Demo</p>
+      <p class="title is-3">Viewer using Presentation API & Level 2 Image API</p>
       <p class="subtitle is-5">Uses a hosted IIIF Image Server</p>
     </div>
     <!-- image viewer -->

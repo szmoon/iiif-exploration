@@ -13,10 +13,10 @@
       <div class="navbar-end">
         <router-link :to="basePath" class="navbar-item">Main</router-link>
         <router-link :to="basePath + 'static-tile-demo'" class="navbar-item">
-          Static Tile Demo
+          Image API Demo
         </router-link>
         <router-link :to="basePath + 'image-api-demo'" class="navbar-item">
-          Image API Demo
+          Presentation API Demo
         </router-link>
         <router-link :to="basePath + 'iiif-uses'" class="navbar-item">
           IIIF Uses
