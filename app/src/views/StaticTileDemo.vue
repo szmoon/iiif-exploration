@@ -70,6 +70,13 @@
         >
       </p> -->
       <p>
+        <b>Generated tile files: </b>
+        <a
+          href="https://github.com/szmoon/iiif-exploration/tree/main/static-tiles/B01-N01"
+          >https://github.com/szmoon/iiif-exploration/tree/main/static-tiles/B01-N01</a
+        >
+      </p>
+      <p>
         <b>info.json: </b>
         <a
           href="https://szmoon.github.io/iiif-exploration/static-tiles/B01-N01/info.json"

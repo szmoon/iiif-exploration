@@ -53,6 +53,7 @@ body {
   }
   p {
     margin-bottom: 15px;
+    font-size: 20px;
   }
 
   ul {
@@ -61,6 +62,7 @@ body {
 
   ol,
   ul {
+    font-size: 20px;
     margin-bottom: 35px;
     margin-left: 35px;
     li {
