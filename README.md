@@ -1,33 +1,7 @@
 # iiif exploration
 
-## B01
+## IIIF and its uses in cultural institutions
 
-### image api
+Here you'll find basic information about IIIF, links to examples of interesting use cases, as well as a few practical demos. This site was created in January 2022 to accompany a presentation, and will not likely be updated later.
 
-B01-N01: https://iiif.archivelab.org/iiif/b01-n01-2022/info.json
-B01-N02: https://iiif.archivelab.org/iiif/b01-n02-2022/info.json
-
-### annotations
-
-B01-N02: https://szmoon.github.io/iiif-exploration/using-internet-archive/B01/N02-annotations.json
-
-### manifest
-
-- https://szmoon.github.io/iiif-exploration/using-internet-archive/B01/manifest.json
-- Mirador: http://sas.gdmrdigital.com/?iiif-content=https://szmoon.github.io/iiif-exploration/using-internet-archive/B01/manifest.json
-- Universal Viewer: http://universalviewer.io/uv.html?manifest=https://szmoon.github.io/iiif-exploration/using-internet-archive/B01/manifest.json
-
-## S01
-
-### image api
-
-S01-N01: https://iiif.archivelab.org/iiif/s01-n01/info.json
-S01-N02: https://iiif.archivelab.org/iiif/s01-n02/info.json
-S01-N03: https://iiif.archivelab.org/iiif/s01-n03/info.json
-S01-N04: https://iiif.archivelab.org/iiif/s01-n04/info.json
-
-### manifest
-
-- https://szmoon.github.io/iiif-exploration/using-internet-archive/S01/manifest.json
-- Mirador: http://sas.gdmrdigital.com/?iiif-content=https://szmoon.github.io/iiif-exploration/using-internet-archive/S01/manifest.json
-- Universal Viewer: http://universalviewer.io/uv.html?manifest=https://szmoon.github.io/iiif-exploration/using-internet-archive/S01/manifest.json
+## viewable at https://szmoon.github.io/iiif-exploration/
