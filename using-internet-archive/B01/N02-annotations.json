@@ -1,0 +1,127 @@
+{
+  "@type": "sc:AnnotationList",
+  "resources": [
+    {
+      "resource": [
+        {
+          "http://dev.llgc.org.uk/sas/full_text": "<span style=\"color: #333333; font-family: 'Open Sans', 'Lucida Grande', Verdana, Arial, sans-serif; background-color: #fafafa;\">Tien-Wei Chang's name seal",
+          "@type": "dctypes:Text",
+          "format": "text/html",
+          "chars": "<p><span style=\"color: #333333; font-family: 'Open Sans', 'Lucida Grande', Verdana, Arial, sans-serif; background-color: #fafafa;\">Tien-Wei Chang's name seal</span></p>"
+        }
+      ],
+      "@type": "oa:Annotation",
+      "dcterms:creator": "https://dev.gdmrdigital.com/user/1245635613/5179244",
+      "motivation": [
+        "oa:commenting"
+      ],
+      "dcterms:created": "2022-01-24T21:17:14",
+      "@id": "https://dev.gdmrdigital.com/annotation/anno/1643059033498",
+      "dcterms:modified": "2022-01-24T21:17:14",
+      "@context": "file:/usr/local/tomcat/webapps/ROOT/contexts/iiif-2.0.json",
+      "on": [
+        {
+          "within": {
+            "@type": "sc:Manifest",
+            "@id": "http://2359eb68-92fd-42ee-8927-b591b2503d6a"
+          },
+          "@type": "oa:SpecificResource",
+          "selector": {
+            "default": {
+              "@type": "oa:FragmentSelector",
+              "value": "xywh=360,325,198,429"
+            },
+            "item": {
+              "@type": "oa:SvgSelector",
+              "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M360.05483,325.25984h99.08174v0h99.08174v214.72133v214.72133h-99.08174h-99.08174v-214.72133z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_78bbd221-b934-464e-9df7-6a1ab5e35982\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#e61111\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+            },
+            "@type": "oa:Choice"
+          },
+          "full": "http://8802260d-753b-4ad4-afbc-44d5c4ed9420"
+        }
+      ]
+    },
+    {
+      "resource": [
+        {
+          "http://dev.llgc.org.uk/sas/full_text": "<span style=\"color: #333333; font-family: 'Open Sans', 'Lucida Grande', Verdana, Arial, sans-serif; background-color: #fafafa;\">The date that this painting was created (?)",
+          "@type": "dctypes:Text",
+          "format": "text/html",
+          "chars": "<p><span style=\"color: #333333; font-family: 'Open Sans', 'Lucida Grande', Verdana, Arial, sans-serif; background-color: #fafafa;\">The date that this painting was created (?)</span></p>"
+        }
+      ],
+      "@type": "oa:Annotation",
+      "dcterms:creator": "https://dev.gdmrdigital.com/user/1245635613/5179244",
+      "motivation": [
+        "oa:commenting"
+      ],
+      "dcterms:created": "2022-01-24T21:18:29",
+      "@id": "https://dev.gdmrdigital.com/annotation/anno/1643059109979",
+      "dcterms:modified": "2022-01-24T21:18:29",
+      "@context": "file:/usr/local/tomcat/webapps/ROOT/contexts/iiif-2.0.json",
+      "on": [
+        {
+          "within": {
+            "@type": "sc:Manifest",
+            "@id": "http://2359eb68-92fd-42ee-8927-b591b2503d6a"
+          },
+          "@type": "oa:SpecificResource",
+          "selector": {
+            "default": {
+              "@type": "oa:FragmentSelector",
+              "value": "xywh=681,212,1121,482"
+            },
+            "item": {
+              "@type": "oa:SvgSelector",
+              "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M681.34294,212.08459h560.4292v0h560.4292v240.75537v240.75537h-560.4292h-560.4292v-240.75537z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_9e372878-4323-4e09-8e1c-e07304510c8e\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+            },
+            "@type": "oa:Choice"
+          },
+          "full": "http://8802260d-753b-4ad4-afbc-44d5c4ed9420"
+        }
+      ]
+    },
+    {
+      "resource": [
+        {
+          "http://dev.llgc.org.uk/sas/full_text": "<strong style=\"color: #333333; font-family: 'Open Sans', 'Lucida Grande', Verdana, Arial, sans-serif; background-color: #fafafa;\">張天威<span style=\"color: #333333; font-family: 'Open Sans', 'Lucida Grande', Verdana, Arial, sans-serif; background-color: #fafafa;\">&nbsp;(Zhāngtiānwēi) - Tien-Wei Chang's name in traditional Chinese",
+          "@type": "dctypes:Text",
+          "format": "text/html",
+          "chars": "<p><strong style=\"color: #333333; font-family: 'Open Sans', 'Lucida Grande', Verdana, Arial, sans-serif; background-color: #fafafa;\">張天威</strong><span style=\"color: #333333; font-family: 'Open Sans', 'Lucida Grande', Verdana, Arial, sans-serif; background-color: #fafafa;\">&nbsp;(Zhāngtiānwēi) - Tien-Wei Chang's name in traditional Chinese</span></p>"
+        }
+      ],
+      "@type": "oa:Annotation",
+      "dcterms:creator": "https://dev.gdmrdigital.com/user/1245635613/5179244",
+      "motivation": [
+        "oa:commenting"
+      ],
+      "dcterms:created": "2022-01-24T21:17:49",
+      "@id": "https://dev.gdmrdigital.com/annotation/anno/1643059069819",
+      "dcterms:modified": "2022-01-24T21:17:49",
+      "@context": "file:/usr/local/tomcat/webapps/ROOT/contexts/iiif-2.0.json",
+      "on": [
+        {
+          "within": {
+            "@type": "sc:Manifest",
+            "@id": "http://2359eb68-92fd-42ee-8927-b591b2503d6a"
+          },
+          "@type": "oa:SpecificResource",
+          "selector": {
+            "default": {
+              "@type": "oa:FragmentSelector",
+              "value": "xywh=499,252,174,522"
+            },
+            "item": {
+              "@type": "oa:SvgSelector",
+              "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M673.05378,251.57442h-87.06695v0h-87.06695v260.89322v260.89322h87.06695h87.06695v-260.89322z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_54a6ad82-74cb-4e42-a402-357b9a4ca460\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#ffff00\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+            },
+            "@type": "oa:Choice"
+          },
+          "full": "http://8802260d-753b-4ad4-afbc-44d5c4ed9420"
+        }
+      ]
+    }
+  ],
+  "@id": "https://dev.gdmrdigital.com/annotations/1245635613/5179244/84b5f1c1382e6ce60131f8ce2c89a0a7.json",
+  "@context": "http://iiif.io/api/presentation/2/context.json"
+}
