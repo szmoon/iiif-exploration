@@ -24,16 +24,19 @@ export default {
   },
   methods: {
     initViewer() {
-      var map;
-      var iiifLayers = {};
-
-      map = L.map('map', {
+      const map = L.map('map', {
         center: [0, 0],
         crs: L.CRS.Simple,
         zoom: 0
       });
 
+      if (this.infoJson) {
+        L.tileLayer.iiif(this.infoJson).addTo(map);
+      }
+
       if (this.manifestUrl) {
+        const iiifLayers = {};
+
         // Grab a IIIF manifest
         $.getJSON(this.manifestUrl, function (data) {
           // For each image create a L.TileLayer.Iiif object and add that to an object literal for the layer control
@@ -44,27 +47,11 @@ export default {
           });
 
           // Add layers control to the map
-          // L.control.layers(iiifLayers).addTo(map);
+          L.control.layers(iiifLayers).addTo(map);
 
-          // Access the first Iiif object and add it to the map
+          // Access the first iiif object and add it to the map
           iiifLayers[Object.keys(iiifLayers)[0]].addTo(map);
         });
-      }
-
-      if (this.infoJson) {
-        // var map, iiifLayers;
-        // map = L.map('map', {
-        //   center: [0, 0],
-        //   crs: L.CRS.Simple,
-        //   zoom: 0
-        // });
-        // let staticTiles = L.tileLayer.iiif(
-        //   'http://evil-manifests.davidnewbury.com/iiif/images/garden-1/info.json'
-        // );
-        // iiifLayers = {
-        //   'Martin Luther King Jr. & Joan Baez ...': staticTiles
-        // };
-        // L.control.layers(iiifLayers).addTo(map);
       }
     }
   }

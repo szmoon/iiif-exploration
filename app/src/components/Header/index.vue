@@ -7,15 +7,15 @@
     </div>
 
     <div class="navbar-menu">
-      <!-- <div class="navbar-start">
-        <a class="navbar-item"> Home </a>
-      </div> -->
       <div class="navbar-end">
         <router-link :to="basePath" class="navbar-item">Main</router-link>
-        <router-link :to="basePath + 'static-tile-demo'" class="navbar-item">
+        <router-link :to="basePath + 'image-api-demo'" class="navbar-item">
           Image API Demo
         </router-link>
-        <router-link :to="basePath + 'image-api-demo'" class="navbar-item">
+        <router-link
+          :to="basePath + 'presentation-api-demo'"
+          class="navbar-item"
+        >
           Presentation API Demo
         </router-link>
         <router-link :to="basePath + 'iiif-uses'" class="navbar-item">

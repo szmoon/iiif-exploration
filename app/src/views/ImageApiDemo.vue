@@ -1,98 +1,90 @@
 <template>
   <div>
     <div class="container has-text-left mb-5">
-      <p class="title is-3">Viewer using Presentation API & Level 2 Image API</p>
-      <p class="subtitle is-5">Uses a hosted IIIF Image Server</p>
+      <h1 class="title is-3">Viewer using Level 0 Image API</h1>
+      <p class="subtitle is-5">
+        Uses pre-generated tiles and static web hosting
+      </p>
     </div>
     <!-- image viewer -->
-    <MiradorViewer
-      manifestUrl="https://szmoon.github.io/iiif-exploration/using-internet-archive/B01/manifest.json"
+    <LeafletIiifViewer
+      infoJson="https://szmoon.github.io/iiif-exploration/static-tiles/B01-N01/info.json"
     />
     <!-- demo info -->
     <div class="container has-text-left mt-5">
       <h2 class="title is-5">About</h2>
       <p>
-        Using/implementing a true IIIF Image API gives access to the additional
-        features and APIs available. There are multiple ways to utilize an image server:
-        <ol>
-        <li>Update an existing image server to handle IIIF images (likely
-        the best option for institutions that already host their own images, to
-        avoid hosting them in multiple locations)</li>
-        <li>Upload images to an
-        existing service that has a IIIF server (generally the options are paid
-        services)</li>
-        <li>Host your own server, using one of the open source
-        options available (Cantaloupe, Loris)</li>
-        </ol>
+        Also called a Level 0 implementation of the IIIF Image API, this example
+        uses
+        <a
+          href="https://github.com/szmoon/iiif-exploration/tree/main/static-tiles/B01-N01"
+          >pre-generated image tiles</a
+        >, organized in a folder structure that mimics the url structure of an
+        actual IIIF Image API. "Level 0" refers to the
+        <a
+          href="https://iiif.io/api/image/3.0/#6-compliance-level-and-profile-document"
+          >level</a
+        >
+        of compliance the json has with the IIIF Image API (minimum required).
       </p>
       <h2 class="title is-5">Pros</h2>
       <p>
-        Supports custom cropping, regions, sizes, etc - this means that
-        annotations and the Search API can be used, and also means that images
-        be more compatible with image viewers (for example, custom sizes means
-        that thumbnails will be supported).
+        No image server required (only file storage), so it's cheaper to host
+        images this way. Cons: doesn't support custom sizes and cropping.
       </p>
       <h2 class="title is-5">Cons</h2>
       <p>
-        It's pretty difficult to set up even a simple IIIF image server! Also
-        more resource intensive than a Level 0 implementation. Alternatively,
-        there are paid services that will host them for you.
+        Doesn't support custom sizes, regions and cropping, which means that
+        images won't perform well in many popular viewers (thumbnails won't
+        populate). Annotations also won't compatible because of this.
       </p>
       <h2 class="title is-5">Tech Details</h2>
       <p>
-        The images in this demo are hosted for free on the Internet Archive and
-        served with their provided IIIF Image API. This
+        The images in this example were created using the
         <a
-          href="https://training.iiif.io/iiif-online-workshop/day-two/image-servers/iiif-hosting-ia.html"
-          >guide from the IIIF workshop</a
+          href="https://training.iiif.io/iiif-online-workshop/day-two/image-servers/level0-workbench.html"
+          >Github Workbench</a
         >
-        details how to do this.
+        by Glen Robson, which leads you through the process of creating a Level
+        0 implementation.
       </p>
       <p>
         The viewer on this page is powered by
-        <a href="https://projectmirador.org/">Mirador</a>, wrapped in a custom
-        Vue component. It's displaying images and annotations via the
+        <a href="https://leafletjs.com/">leaflet</a> and
+        <a href="https://github.com/mejackreed/Leaflet-IIIF">leaflet-iiif</a>,
+        wrapped in a custom Vue component.
+      </p>
+      <p>
+        <b>Generated tile files: </b>
         <a
-          href="https://szmoon.github.io/iiif-exploration/using-internet-archive/B01/manifest.json"
-          >manifest</a
-        >.
+          href="https://github.com/szmoon/iiif-exploration/tree/main/static-tiles/B01-N01"
+          >https://github.com/szmoon/iiif-exploration/tree/main/static-tiles/B01-N01</a
+        >
       </p>
       <p>
-        <b>Manifest: </b>
+        <b>info.json: </b>
         <a
-          href="https://szmoon.github.io/iiif-exploration/using-internet-archive/B01/manifest.json"
-        >https://szmoon.github.io/iiif-exploration/using-internet-archive/B01/manifest.json</a>
+          href="https://szmoon.github.io/iiif-exploration/static-tiles/B01-N01/info.json"
+          >https://szmoon.github.io/iiif-exploration/static-tiles/B01-N01/info.json</a
+        >
       </p>
       <p>
-        <b>info.json for 1st image: </b>
-        <a href="https://iiif.archivelab.org/iiif/b01-n01-2022/info.json">https://iiif.archivelab.org/iiif/b01-n01-2022/info.json</a>
-      </p>
-      <p>
-        <b>full-size jpg for 1st image: </b>
+        <b>full-size jpg: </b>
         <a
-          href="https://iiif.archivelab.org/iiif/b01-n01-2022/full/full/0/default.jpg"
-        >https://iiif.archivelab.org/iiif/b01-n01-2022/full/full/0/default.jpg</a>
-      </p>
-      <p>
-        <b>info.json for 2nd image: </b>
-        <a href="https://iiif.archivelab.org/iiif/b01-n02-2022/info.json">https://iiif.archivelab.org/iiif/b01-n02-2022/info.json</a>
-      </p>
-      <p>
-        <b>full-size jpg for 2nd image: </b>
-        <a
-          href="https://iiif.archivelab.org/iiif/b01-n02-2022b/full/full/0/default.jpg"
-        >https://iiif.archivelab.org/iiif/b01-n02-2022b/full/full/0/default.jpg</a>
+          href="https://szmoon.github.io/iiif-exploration/static-tiles/B01-N01/full/full/0/default.jpg"
+          >https://szmoon.github.io/iiif-exploration/static-tiles/B01-N01/full/full/0/default.jpg</a
+        >
       </p>
     </div>
   </div>
 </template>
 
 <script>
-import MiradorViewer from '../components/MiradorViewer';
+import LeafletIiifViewer from '../components/LeafletIiifViewer';
 export default {
-  name: 'Home',
+  name: 'ImageApiDemo',
   components: {
-    MiradorViewer
+    LeafletIiifViewer
   }
 };
 </script>
